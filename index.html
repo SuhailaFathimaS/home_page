@@ -12,22 +12,30 @@
       header {
           background-color: #26a69a; /* Teal header */
           color: #fff;
-          padding: 20px 0;
-          text-align: center;
+          padding: 20px;
+          text-align: left; /* Align text to left */
+          display: flex; /* Align logo and header text horizontally */
+          align-items: center; /* Align items vertically */
+      }
+      #logo {
+          height: 50px;
+          margin-right: 20px; /* Add margin to the right for spacing */
+      }
+      header h1 {
+          margin: 0; /* Remove default margin */
       }
       footer {
           background-color: #004d40; /* Dark teal footer */
           color: #fff;
-          padding: 10px 0;
+          padding: 20px;
           text-align: center;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
+      }
+      footer p {
+          margin: 0; /* Remove default margin */
       }
       .frames {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-start; /* Align frames to the left */
           flex-wrap: wrap;
           padding: 20px;
       }
@@ -35,9 +43,9 @@
           background-color: #fff; /* White frame background */
           border: 1px solid #26a69a; /* Teal border */
           border-radius: 10px;
-          margin: 20px;
-          padding: 20px;
-          width: 300px;
+          margin: 10px;
+          padding: 10px;
+          width: 150px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
           transition: transform 0.3s ease;
       }
@@ -78,28 +86,64 @@
           background-color: #fff; /* White frame background */
           border: 1px solid #26a69a; /* Teal border */
           border-radius: 10px;
-          margin: 20px;
+          margin: 10px 20px 10px 0; /* Adjust margin */
           padding: 20px;
-          width: 600px;
+          width: 200px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
           transition: transform 0.3s ease;
       }
       .framee h3 {
-          font-size: 30px;
+          font-size: 16px;
           text-align: center;
           margin-bottom: 20px;
           color: #004d40; /* Dark teal heading */
       }
       .framee h4 {
-          font-size: 18px;
+          font-size: 12px;
           text-align: left;
           margin-bottom: 10px;
           color: #004d40; /* Dark teal heading */
+      }
+      /* Style form elements */
+      footer {
+          background-color: #004d40; /* Dark teal footer */
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+      }
+      footer h2 {
+          margin-bottom: 10px; /* Add margin below the heading */
+      }
+      footer p {
+          margin: 0; /* Remove default margin */
+      }
+      /* Style form elements */
+      footer form {
+          display: flex;
+          flex-direction: column; /* Align form elements vertically */
+          align-items: center;
+          margin-top: 10px;
+      }
+      footer textarea {
+          width: 300px; /* Increase input width */
+          padding: 10px;
+          margin-bottom: 10px; /* Add margin below the inputs */
+          border-radius: 5px;
+          border: 1px solid #ccc;
+      }
+      footer input[type="submit"] {
+          background-color: #26a69a;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
       }
   </style>
 </head>
 <body>
     <header>
+        <img id="logo" src="LOGO.jpg" alt="Sastra University Logo">
         <h1>SASTRA Deemed University - Central Library</h1>
     </header>
     <div class="frames">
@@ -111,46 +155,50 @@
         <h4>VALID DATE:  30-06-2026</h4>
         <h4>DESIGNATION: STUDENT</h4>
       </div>
-    </div>
-    <div class="frames">
-      <div class="frame">
-            <h3>Issued Books</h3>
-            <img src="issued-books.jpg" alt="Issued Books">
-            <p>Explore the books you've borrowed</p>
-            <a href="#">View Details</a>
-        </div>
-        <div class="frame">
-            <h3>Returned Books</h3>
-            <img src="returned-books.jpg" alt="Returned Books">
-            <p>Discover books you've returned</p>
-            <a href="#">View Details</a>
-        </div>
-        <div class="frame">
-            <h3>Reserved Books</h3>
-            <img src="reserved-books.jpg" alt="Reserved Books">
-            <p>View books you've reserved</p>
-            <a href="#">View Details</a>
-        </div>
         <div class="frame">
             <h3>New Arrivals</h3>
-            <img src="new-arrivals.jpg" alt="New Arrivals">
+            <img src="Screenshot 2024-03-31 200904.JPG.png" alt="New Arrivals">
             <p>Discover the latest additions</p>
             <a href="#">View Details</a>
         </div>
         <div class="frame">
-            <h3>Search</h3>
-            <img src="search-books.jpg" alt="Search">
-            <p>Find books with ease</p>
-            <a href="https://suhailafathimas.github.io/search_page/">View Details</a>
+            <h3>Issued Books</h3>
+            <img src="issued-books1.jpg" alt="Issued Books">
+            <p>Explore the books you've borrowed</p>
+            <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/home%20page/issued_books.html">View Details</a>
         </div>
-
+        <div class="frame">
+            <h3>Returned Books</h3>
+            <img src="returned-books1.jpg" alt="Returned Books">
+            <p>Discover books you've returned</p>
+            <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/home%20page/returned_books.html">View Details</a>
+        </div>
+        <div class="frame">
+            <h3>Reserved Books</h3>
+            <img src="reserved-books1.jpg" alt="Reserved Books">
+            <p>View books you've reserved</p>
+            <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/home%20page/reserved_books.html">View Details</a>
+        </div>
+        <div class="frame">
+          <h3>Search</h3>
+          <img src="search-books2.jpg" alt="Search">
+          <p>Find books with ease</p>
+          <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/search%20page/index.html">View Details</a>
+      </div>
         <div class="frame">
             <h3>Total Fine</h3>
-            <img src="total-fine.jpg" alt="Total Fine">
+            <img src="FINE.JPG.png" alt="Total Fine">
             <p>Check your fines and payments</p>
-            <a href="#">View Details</a>
+            <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/home%20page/fine.html">View Details</a>
         </div>
     </div>
+    <footer>
+        <h2>Contact the LIBRARIAN</h2>
+        <form action="#" method="post">
+            <textarea name="query" placeholder="Your Query" rows="3" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <p>For urgent queries, please call: +1-123-456-7890</p>
+    </footer>
 </body>
 </html>
-

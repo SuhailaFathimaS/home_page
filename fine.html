@@ -4,10 +4,23 @@
     <title>Total, Paid, and Unpaid Fine</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f2f1; /* Light blue-green background */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            padding: 20px;
         }
         h1 {
             text-align: center;
+            color: #004d40; /* Dark teal */
+            margin-bottom: 20px;
         }
         ul {
             list-style: none;
@@ -15,17 +28,32 @@
             margin: 0;
         }
         li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+            background-color: #fff; /* White background */
+            border: 1px solid #26a69a; /* Teal border */
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            color: #004d40; /* Dark teal */
+        }
+        li:first-child {
+            border-top-left-radius: 0; /* Adjust border radius for first and last items */
+            border-top-right-radius: 0;
+        }
+        li:last-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
     </style>
 </head>
 <body>
-    <h1>My Fine Details</h1>
-    <ul>
-        <li>Total Fine Amount</li>
-        <li>Paid Fine</li>
-        <li>Unpaid Fine</li>
-    </ul>
+    <div class="container">
+        <h1>My Fine Details</h1>
+        <ul>
+            <li>Total Fine Amount: $100</li>
+            <li>Paid Fine: $60</li>
+            <li>Unpaid Fine: $40</li>
+        </ul>
+    </div>
 </body>
 </html>
