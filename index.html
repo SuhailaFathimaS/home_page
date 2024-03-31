@@ -16,6 +16,7 @@
           text-align: left; /* Align text to left */
           display: flex; /* Align logo and header text horizontally */
           align-items: center; /* Align items vertically */
+          justify-content: space-between; /* Add space between logo and search bar */
       }
       #logo {
           height: 50px;
@@ -23,6 +24,27 @@
       }
       header h1 {
           margin: 0; /* Remove default margin */
+      }
+      .search-bar {
+          margin-right: 20px; /* Adjust margin */
+      }
+      .search-bar input[type="text"] {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          width: 250px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .search-bar input[type="submit"] {
+          background-color: #00796b; /* Teal button background */
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+      }
+      .search-bar input[type="submit"]:hover {
+          background-color: #004d40; /* Darker teal on hover */
       }
       footer {
           background-color: #004d40; /* Dark teal footer */
@@ -145,6 +167,12 @@
     <header>
         <img id="logo" src="LOGO.jpg" alt="Sastra University Logo">
         <h1>SASTRA Deemed University - Central Library</h1>
+        <div class="search-bar">
+            <form action="https://suhailafathimas.github.io/BOOKS/" method="get">
+                <input type="text" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </header>
     <div class="frames">
       <div class="framee">
@@ -183,7 +211,7 @@
           <h3>Search</h3>
           <img src="search-books2.jpg" alt="Search">
           <p>Find books with ease</p>
-          <a href="file:///C:/Users/ssuha/Desktop/suhaila/minor/search%20page/index.html">View Details</a>
+          <a href="https://suhailafathimas.github.io/search_page/">View Details</a>
       </div>
         <div class="frame">
             <h3>Total Fine</h3>
@@ -198,7 +226,7 @@
             <textarea name="query" placeholder="Your Query" rows="3" required></textarea>
             <input type="submit" value="Submit">
         </form>
-        <p>For urgent queries, please call: +1-123-456-7890</p>
+        <p>For ur queries, please call: +1-123-456-7890</p>
     </footer>
 </body>
 </html>
